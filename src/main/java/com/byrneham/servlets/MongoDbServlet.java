@@ -28,6 +28,7 @@ public class MongoDbServlet extends HttpServlet {
         buf.append("Request from host: ").append(req.getHeader("host")).append("<br/>");
         buf.append("Request context path: ").append(req.getContextPath()).append("<br/>");
         String mongoHost = System.getenv("MONGO_HOST");
+        System.out.println("MONGO_HOST environment var Mongo Host: " + mongoHost);
         buf.append("MONGO_HOST environment var Mongo Host: ").append(mongoHost).append("<br/>");
         try {
             MongoClient mongoClient = new MongoClient( mongoHost,27017 );
