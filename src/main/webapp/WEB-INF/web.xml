@@ -12,7 +12,19 @@
     <servlet-mapping>
         <servlet-name>initial</servlet-name>
         <url-pattern>/initial</url-pattern>
-
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>mongodb</servlet-name>
+        <servlet-class>com.byrneham.servlets.MongoDbServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mongodb</servlet-name>
+        <url-pattern>/mongodb</url-pattern>
+    </servlet-mapping>
+
+
 
 </web-app>
