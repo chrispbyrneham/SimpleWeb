@@ -21,9 +21,7 @@ public class RestaurantHelper {
                     // needing a custom deserialiser...
                     Restaurant restaurant = gson.fromJson( document.toJson(),Restaurant.class );
                     restaurants.add(restaurant);
-                    System.out.println( document.toString() );//System.out.println(document);
                     String json = gson.toJson(restaurant);
-                    System.out.println(json);
                 } catch (JsonSyntaxException e) {
                     e.printStackTrace();
                 }

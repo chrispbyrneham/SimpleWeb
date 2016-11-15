@@ -16,7 +16,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-
+/*
+*
+* if this app is deployed in an openshift project called simpleweb
+* and the mongoinit mongodb server is deployed in the same project, then the mongodb host can be
+* accessed from the internal DNS name  mongoinit.simpleweb.svc.cluster.local
+* by setting the environment var MONGO_HOST to mongoinit.simpleweb.svc.cluster.local
+*
+* */
 public class MongoDbServlet extends HttpServlet {
 
 
@@ -28,7 +35,7 @@ public class MongoDbServlet extends HttpServlet {
         buf.append("Request from host: ").append(req.getHeader("host")).append("<br/>");
         buf.append("Request context path: ").append(req.getContextPath()).append("<br/>");
         String mongoHost = System.getenv("MONGO_HOST");
-        System.out.println("MONGO_HOST environment var Mongo Host: " + mongoHost);
+        // System.out.println("MONGO_HOST environment var Mongo Host: " + mongoHost);
         buf.append("MONGO_HOST environment var Mongo Host: ").append(mongoHost).append("<br/>");
         try {
             MongoClient mongoClient = new MongoClient( mongoHost,27017 );
@@ -38,7 +45,8 @@ public class MongoDbServlet extends HttpServlet {
             gsonBldr.registerTypeAdapter(Restaurant.class, new RestaurantDeserializerFromJsonWithDifferentFields());
             Gson gson = gsonBldr.create();
             List<Restaurant> restaurants = RestaurantHelper.getRestaurants(iterable,gson);
-            for (int i = 0; i < restaurants.size(); i++) {
+            int size = restaurants.size()>10 ? 10 : restaurants.size();
+            for (int i = 0; i < size; i++) {
                 Restaurant restaurant =  restaurants.get(i);
                 buf.append(restaurant.toString()).append("<br/>");
             }
