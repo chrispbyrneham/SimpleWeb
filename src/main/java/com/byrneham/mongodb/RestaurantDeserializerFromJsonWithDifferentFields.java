@@ -8,7 +8,6 @@ import java.util.Date;
 public class RestaurantDeserializerFromJsonWithDifferentFields implements JsonDeserializer<Restaurant> {
 
 
-    @Override
     public Restaurant deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
 
         JsonObject jObject = jsonElement.getAsJsonObject();

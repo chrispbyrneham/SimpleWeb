@@ -45,7 +45,9 @@ public class MongoDbServlet extends HttpServlet {
             gsonBldr.registerTypeAdapter(Restaurant.class, new RestaurantDeserializerFromJsonWithDifferentFields());
             Gson gson = gsonBldr.create();
             List<Restaurant> restaurants = RestaurantHelper.getRestaurants(iterable,gson);
-            int size = restaurants.size()>10 ? 10 : restaurants.size();
+            // Changed this to 5
+
+            int size = restaurants.size()> 5 ? 5 : restaurants.size();
             for (int i = 0; i < size; i++) {
                 Restaurant restaurant =  restaurants.get(i);
                 buf.append(restaurant.toString()).append("<br/>");
