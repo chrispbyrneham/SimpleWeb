@@ -9,11 +9,20 @@
         <servlet-class>com.byrneham.servlets.InitialServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>download</servlet-name>
+        <servlet-class>com.byrneham.servlets.DownloadServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>initial</servlet-name>
         <url-pattern>/initial</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>mongodb</servlet-name>
