@@ -13,8 +13,8 @@ node {
     }
     stage('Build') {
         echo: 'Build'
-
-        sh "mvn -N io.takari:maven:wrapper -Dmaven=3.3.9 -s configuration/settings.xml"
+        mvnHome = tool 'M3'
+        sh "'${mvnHome}/bin/mvn' -N io.takari:maven:wrapper -Dmaven=3.3.9 -s configuration/settings.xml"
         mvn '--version'
         mvn 'install -DskipTests'
 
