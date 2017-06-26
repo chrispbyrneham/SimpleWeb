@@ -22,7 +22,7 @@ node {
     def mvnHome
 
     stage('Preparation') { // for display purposes
-        System.out.println("Preparation");
+
         // Get some code from a GitHub repository
         git 'https://github.com/jglick/simple-maven-project-with-tests.git'
         // Get the Maven tool.
@@ -31,7 +31,7 @@ node {
         mvnHome = tool 'M3'
     }
     stage('Build') {
-        System.out.println("Build");
+
         // Run the maven build
         if (isUnix()) {
             sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
@@ -40,7 +40,7 @@ node {
         }
     }
     stage('Results') {
-        System.out.println("Results");
+
         junit '**/target/surefire-reports/TEST-*.xml'
         archive 'target/*.jar'
     }

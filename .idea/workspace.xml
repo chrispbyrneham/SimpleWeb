@@ -66,8 +66,8 @@
       <file leaf-file-name="pipeline.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configuration/pipeline.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            <state relative-caret-position="348">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1246,7 +1246,7 @@
       <workItem from="1482311870334" duration="629000" />
       <workItem from="1484662594429" duration="42000" />
       <workItem from="1498038875017" duration="11000" />
-      <workItem from="1498038916984" duration="11195000" />
+      <workItem from="1498038916984" duration="11266000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1476953654411</created>
@@ -1311,7 +1311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498475935557</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Jenkins Pipeline Trials">
+      <created>1498476185200</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1498476185200</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1335,7 +1342,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38640000" />
+    <option name="totallyTimeSpent" value="38711000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1818,8 +1825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configuration/pipeline.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="348">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
