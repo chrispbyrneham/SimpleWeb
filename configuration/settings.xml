@@ -8,7 +8,7 @@
     <mirror>
       <id>internal-nexus-repository</id>
       <name>Internal Nexus Repository (Group)</name>
-      <url>http://192.168.1.8:8081/repository/maven-central/</url>
+      <url>http://172.17.0.3:8081/repository/maven-central/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
