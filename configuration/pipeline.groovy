@@ -3,45 +3,25 @@ def mvn( String goals ) {
     sh "./mvnw -s configuration/settings.xml --show-version --batch-mode ${goals}"
 }
 
-
-String get_application_name() {
-    pom = readMavenPom file: 'pom.xml'
-    pom.artifactId
-}
-
-String get_application_version() {
-    pom = readMavenPom file: 'pom.xml'
-    pom.version
-}
-
-
-
-
-
 node {
-    def mvnHome
 
-    stage('Preparation') { // for display purposes
-        echo: 'Preparation' + get_application_name()
-        // Get some code from a GitHub repository
-        git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-        // Get the Maven tool.
-        // ** NOTE: This 'M3' Maven tool must be configured
-        // **       in the global configuration.
-        mvnHome = tool 'M3'
+    stage('Checkout') {
+        echo: 'Checkout'
+        // Get code from a GitHub repository
+        git 'https://github.com/chrispbyrneham/SimpleWeb.git'
+
     }
     stage('Build') {
         echo: 'Build'
-        // Run the maven build
-        if (isUnix()) {
-            sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
-        } else {
-            bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-        }
+
+        sh "mvn -N io.takari:maven:wrapper -Dmaven=3.3.9 -s configuration/settings.xml"
+        mvn '--version'
+        mvn 'install -DskipTests'
+
     }
     stage('Results') {
         echo: 'Results'
         junit '**/target/surefire-reports/TEST-*.xml'
-        archive 'target/*.jar'
+        //archive 'target/*.jar'
     }
 }
