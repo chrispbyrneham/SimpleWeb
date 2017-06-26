@@ -8,6 +8,9 @@
     <mirror>
       <id>internal-nexus-repository</id>
       <name>Internal Nexus Repository (Group)</name>
+      <!-- This address must be the accessible nexus server address.
+      When running under docker it's a bridge address.
+      use "docker network inspect bridge" to see -->
       <url>http://172.17.0.3:8081/repository/maven-central/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>

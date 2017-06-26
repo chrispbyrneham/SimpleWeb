@@ -13,7 +13,9 @@ node {
     }
     stage('Build') {
         echo: 'Build'
-        // M3 is the name of the Maven installation in jenkins
+        // M3 is the name of the Maven installation in
+        // Jenkins, Manage Jenkins, Global Tool Configuration,
+        // Maven, Maven Installations, Name
         mvnHome = tool 'M3'
         sh "'${mvnHome}/bin/mvn' -N io.takari:maven:wrapper -Dmaven=3.3.9 -s configuration/settings.xml"
         mvn '--version'
