@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="733bcfad-bc7d-4c9d-98ca-42918d86f1c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/pipeline.groovy" afterPath="$PROJECT_DIR$/configuration/pipeline.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/settings.xml" afterPath="$PROJECT_DIR$/configuration/settings.xml" />
     </list>
     <ignored path="simpleWeb.iws" />
@@ -54,17 +53,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configuration/settings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipeline.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipeline.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configuration/pipeline.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -1247,7 +1246,7 @@
       <workItem from="1482311870334" duration="629000" />
       <workItem from="1484662594429" duration="42000" />
       <workItem from="1498038875017" duration="11000" />
-      <workItem from="1498038916984" duration="14668000" />
+      <workItem from="1498038916984" duration="15489000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1476953654411</created>
@@ -1347,7 +1346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498480351266</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Jenkins Pipeline Trials">
+      <created>1498481272201</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1498481272201</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1371,7 +1377,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42113000" />
+    <option name="totallyTimeSpent" value="42934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1844,18 +1850,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configuration/pipeline.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
         </state>
       </provider>
