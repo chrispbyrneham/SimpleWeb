@@ -4,6 +4,7 @@
     <list default="true" id="733bcfad-bc7d-4c9d-98ca-42918d86f1c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/pipeline.groovy" afterPath="$PROJECT_DIR$/configuration/pipeline.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/settings.xml" afterPath="$PROJECT_DIR$/configuration/settings.xml" />
     </list>
     <ignored path="simpleWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +57,8 @@
       <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configuration/settings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -66,8 +67,8 @@
       <file leaf-file-name="pipeline.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configuration/pipeline.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -163,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/byrneham/mongodb/RestaurantHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byrneham/mongodb/RestaurantDeserializerFromJsonWithDifferentFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byrneham/servlets/MongoDbServlet.java" />
-        <option value="$PROJECT_DIR$/configuration/settings.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/byrneham/servlets/InitialServlet.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/byrneham/servlets/InitialServletTest.java" />
@@ -171,6 +171,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/byrneham/servlets/DownloadServlet.java" />
         <option value="$PROJECT_DIR$/configuration/pipeline.groovy" />
+        <option value="$PROJECT_DIR$/configuration/settings.xml" />
       </list>
     </option>
   </component>
@@ -1246,7 +1247,7 @@
       <workItem from="1482311870334" duration="629000" />
       <workItem from="1484662594429" duration="42000" />
       <workItem from="1498038875017" duration="11000" />
-      <workItem from="1498038916984" duration="13748000" />
+      <workItem from="1498038916984" duration="14668000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1476953654411</created>
@@ -1339,7 +1340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498478607091</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Jenkins Pipeline Trials">
+      <created>1498480351266</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1498480351266</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1363,7 +1371,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41193000" />
+    <option name="totallyTimeSpent" value="42113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1826,14 +1834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/byrneham/servlets/InitialServletTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1844,10 +1844,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/configuration/pipeline.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
           <folding />
         </state>
       </provider>
